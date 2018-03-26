@@ -23,7 +23,7 @@ connection {
   private_key ="${file("/home/ubuntu/ec2.pem")}"
 }
   
-# copy script.sh file from Loacal to remote machine
+# copy script.sh file from Loacal to remote machine for installing Java and tomcat
   
   provisioner "file" {
     source      = "/home/ubuntu/tf/script.sh"
